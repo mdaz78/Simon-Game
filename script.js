@@ -63,14 +63,34 @@ function blinkSimonSequence(arr) {
         colorPad.style.opacity = 1;
         game.sound[arr[i - 1]].play();
       }
-    })(i), 700 * i);
+    })(i), 900 * i);
 
   }
 }
 
 let counter = 0;
 
+function playSound(color) {
+  switch (color) {
+    case "green":
+      game.sound.green.play();
+      break;
+    case "red":
+      game.sound.red.play();
+      break;
+    case "yellow":
+      game.sound.yellow.play();
+      break;
+    case "blue":
+      game.sound.blue.play();
+      break;
+    default:
+      break;
+  }
+}
+
 function check(e) {
+  playSound(e.target.id);
   if (e.target.id == game.simonSequence[counter]) {
     counter++;
   } else if (e.target.id !== game.simonSequence[counter]) {
