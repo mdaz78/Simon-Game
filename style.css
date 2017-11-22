@@ -1,0 +1,103 @@
+body {
+  background-color: #d8d2d2;
+}
+
+.container {
+  margin: 70px auto;
+  text-align: center;
+}
+
+header {
+  margin-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Cabin', sans-serif;
+  font-size: 2.5em;
+}
+
+.simon-board {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border: solid 5px black;
+  border-radius: 50%;
+}
+
+.buttons {
+  margin: 0px;
+  float: left;
+  position: relative;
+  width: 145px;
+  height: 145px;
+  border: solid 3px black;
+  cursor: pointer;
+}
+
+#green {
+  background-color: green;
+  border-radius: 300px 0 0 0;
+}
+
+#red {
+  background-color: red;
+  border-radius: 0 300px 0 0;
+}
+
+#yellow {
+  background-color: yellow;
+  border-radius: 0 0 0 300px;
+}
+
+#blue {
+  background-color: blue;
+  border-radius: 0 0 300px 0;
+}
+
+.controls {
+  text-align: center;
+  width: 125px;
+  height: 90px;
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 80px;
+  margin-top: 100px;
+}
+
+.display,
+.restart {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: solid 1px black;
+  margin: 6px 8px;
+  background-color: #352727;
+  color: red;
+  font-size: 1.25em;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.restart {
+  background-color: #d9d9d9;
+  border: solid 1px #d9d9d9;
+  color: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.start,
+.strict {
+  display: inline-block;
+  margin: 3px 5px 10px 5px;
+  border: solid 1px #d9d9d9;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  color: black;
+  font-size: 0.75em;
+  cursor: pointer;
+}
